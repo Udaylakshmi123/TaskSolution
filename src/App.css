@@ -12,3 +12,20 @@
   color: #fff;
   transition: 0.5s ease-in;
 }
+
+/* file staructure css */
+.fileStructure{
+  text-align: left;
+}
+.fileStructure div{
+    padding-left: 10px;
+}
+.fileName{
+  display: flex;
+  align-items: center;
+}
+.folderImg{
+  width: 24px;
+  height: 24px;
+  padding-left: 4px;
+}
