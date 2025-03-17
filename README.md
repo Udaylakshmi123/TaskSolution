@@ -5,6 +5,7 @@
 # Task 2
 - Nested file folder Explorer
 - Add/Remove File/folder
+- Tech stack(React, HTML, CSS)
 ![alt text](image-1.png)
 
 # Task 3
