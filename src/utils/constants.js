@@ -1,0 +1,1 @@
+export const IMG_URL ="https://bellroy-product-images.imgix.net/bellroy_dot_com_range_page_image/AUD/";

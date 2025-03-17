@@ -3,11 +3,14 @@ import { useState } from "react";
 import FileFolderExplorer from './components/FileFolderExplorer';
 import ProgressBar from "./components/ProgressBar";
 import json from "./utils/fileData.json";
+import TravelProductsList from './components/TravelProductsList';
+import useTravelProductsList from './hooks/useTravelProductsList';
+
 
 function App() {
+  useTravelProductsList();
    const [fileData, setFileData] = useState(json);
     const addNewFolder = (id)=>{
-      console.log(id,'ad...')
       const name=prompt('Enter name');
       const updateFolder =(prevList)=>{
        return prevList.map((list)=>{
@@ -40,6 +43,8 @@ function App() {
    <ProgressBar progress={70} />
    <h1>File/Folder Explorer</h1>
    <FileFolderExplorer fileData={fileData} addNewFolder={addNewFolder} deleteFileFolder={deleteFileFolder}/>
+   <h1>Bellroy Test</h1>
+   <TravelProductsList title={"Traveling soon? These travel products will help."} />
    </div>
   );
 }
